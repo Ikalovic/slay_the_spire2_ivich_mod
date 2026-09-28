@@ -1,0 +1,13 @@
+**/bin/
+**/obj/
+.godot/
+.vs/
+.idea/
+__pycache__/
+*.pyc
+Local.props
+artifacts/
+dist/
+assets/imported/
+*.user
+*.log

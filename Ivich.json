@@ -1,0 +1,14 @@
+{
+  "id": "Ivich",
+  "name": "依维希 / Ivich",
+  "author": "ika",
+  "description": "空间与冰的龙族少女。开发预览版，使用临时角色美术。",
+  "version": "0.2.0",
+  "min_game_version": "0.107.1",
+  "has_pck": false,
+  "has_dll": true,
+  "dependencies": [
+    { "id": "BaseLib", "min_version": "3.4.7" }
+  ],
+  "affects_gameplay": true
+}

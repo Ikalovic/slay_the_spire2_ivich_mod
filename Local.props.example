@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <!-- Copy to Local.props and use paths appropriate to the build machine. -->
+    <Sts2Path>/mnt/e/SteamLibrary/steamapps/common/Slay the Spire 2</Sts2Path>
+    <BaseLibPath>/mnt/e/SteamLibrary/steamapps/workshop/content/2868840/3737335127/BaseLib</BaseLibPath>
+  </PropertyGroup>
+</Project>
