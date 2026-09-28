@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="../../Local.props" Condition="Exists('../../Local.props')" />
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework><AssemblyName>Ivich</AssemblyName>
+    <RootNamespace>Ivich.Mod</RootNamespace><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable>
+    <Sts2Path Condition="'$(Sts2Path)' == ''">/mnt/e/SteamLibrary/steamapps/common/Slay the Spire 2</Sts2Path>
+    <Sts2DataDir Condition="'$(Sts2DataDir)' == ''">$(Sts2Path)/data_sts2_windows_x86_64</Sts2DataDir>
+    <BaseLibPath Condition="'$(BaseLibPath)' == ''">/mnt/e/SteamLibrary/steamapps/workshop/content/2868840/3737335127/BaseLib</BaseLibPath>
+    <NoWarn>$(NoWarn);MSB3270</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="sts2"><HintPath>$(Sts2DataDir)/sts2.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="0Harmony"><HintPath>$(Sts2DataDir)/0Harmony.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="GodotSharp"><HintPath>$(Sts2DataDir)/GodotSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BaseLib"><HintPath>$(BaseLibPath)/BaseLib.dll</HintPath><Private>false</Private></Reference>
+    <Compile Include="../Ivich.Core/**/*.cs" Exclude="../Ivich.Core/obj/**;../Ivich.Core/bin/**" Link="Core/%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+  <Target Name="CheckGameDependencies" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="!Exists('$(Sts2DataDir)/sts2.dll')" Text="Set Sts2Path/Sts2DataDir in Local.props to the installed game." />
+    <Error Condition="!Exists('$(BaseLibPath)/BaseLib.dll')" Text="Set BaseLibPath in Local.props to BaseLib 3.4.7." />
+  </Target>
+</Project>

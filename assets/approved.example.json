@@ -1,0 +1,8 @@
+{
+  "cards": {
+    "B01": {
+      "portrait": "/absolute/path/to/approved/b01_250x190.png",
+      "large": "/absolute/path/to/approved/b01_1000x760.png"
+    }
+  }
+}

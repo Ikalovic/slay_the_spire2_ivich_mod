@@ -1,0 +1,1653 @@
+{
+  "schema_version": 1,
+  "design_version": "cards-v0.4-mechanics-v0.5",
+  "source_name": "卡牌.md",
+  "source_sha256": "12b20019ffcef484faf9a4cd3b486449e81fe4f481c2d6c1116a05080669ae64",
+  "notice_zh": "完整82张策划目录；运行时接入列表见 runtime-enabled.json。数值未经游戏平衡验证。",
+  "starter_deck": [
+    {
+      "id": "B01",
+      "count": 3
+    },
+    {
+      "id": "B02",
+      "count": 3
+    },
+    {
+      "id": "B03",
+      "count": 1
+    },
+    {
+      "id": "B04",
+      "count": 1
+    },
+    {
+      "id": "B05",
+      "count": 1
+    },
+    {
+      "id": "B06",
+      "count": 1
+    },
+    {
+      "id": "C07",
+      "count": 1
+    }
+  ],
+  "cards": [
+    {
+      "id": "B01",
+      "name_zh": "打击",
+      "type": "attack",
+      "rarity": "basic",
+      "tags_zh": [
+        "武技",
+        "镰刀"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "对一敌造成6伤害。",
+      "upgrade_changes_zh": "伤害9。",
+      "reward_pool": false,
+      "source_line": 56
+    },
+    {
+      "id": "B02",
+      "name_zh": "防御",
+      "type": "skill",
+      "rarity": "basic",
+      "tags_zh": [],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "获得5格挡。",
+      "upgrade_changes_zh": "格挡8。",
+      "reward_pool": false,
+      "source_line": 57
+    },
+    {
+      "id": "B03",
+      "name_zh": "镰柄蓄能",
+      "type": "skill",
+      "rarity": "basic",
+      "tags_zh": [
+        "镰刀"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "初始／魔法使获得3魔力；半龙获得3怒气，只执行当前形态分支。",
+      "upgrade_changes_zh": "对应资源4。",
+      "reward_pool": false,
+      "source_line": 58
+    },
+    {
+      "id": "B04",
+      "name_zh": "咬破指尖",
+      "type": "skill",
+      "rarity": "basic",
+      "tags_zh": [
+        "血"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "生命代价4。抽1张牌；仅半龙时额外获得2怒气。",
+      "upgrade_changes_zh": "抽2张牌；半龙额外怒气3。",
+      "reward_pool": false,
+      "source_line": 59
+    },
+    {
+      "id": "B05",
+      "name_zh": "霜线",
+      "type": "attack",
+      "rarity": "basic",
+      "tags_zh": [
+        "魔法",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 1,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "对一敌造成7伤害，然后施加3冰冻。",
+      "upgrade_changes_zh": "伤害10，冰冻4。",
+      "reward_pool": false,
+      "source_line": 60
+    },
+    {
+      "id": "B06",
+      "name_zh": "退锋",
+      "type": "attack",
+      "rarity": "basic",
+      "tags_zh": [
+        "武技",
+        "镰刀",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "对一敌造成6伤害，然后将距离设为+5。",
+      "upgrade_changes_zh": "伤害10。",
+      "reward_pool": false,
+      "source_line": 61
+    },
+    {
+      "id": "C01",
+      "name_zh": "引镰",
+      "type": "attack",
+      "rarity": "common",
+      "tags_zh": [
+        "武技",
+        "镰刀",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "将距离设为-5，对一敌造成7伤害。",
+      "upgrade_changes_zh": "伤害10。",
+      "reward_pool": true,
+      "source_line": 73
+    },
+    {
+      "id": "C02",
+      "name_zh": "掠步",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "空间"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "选择使距离增加5或减少5；获得4格挡。",
+      "upgrade_changes_zh": "格挡7。",
+      "reward_pool": true,
+      "source_line": 74
+    },
+    {
+      "id": "C03",
+      "name_zh": "退身回刃",
+      "type": "attack",
+      "rarity": "common",
+      "tags_zh": [
+        "武技",
+        "镰刀",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "对一敌造成8伤害；将距离设为+5，获得5格挡。",
+      "upgrade_changes_zh": "伤害11，格挡7。",
+      "reward_pool": true,
+      "source_line": 75
+    },
+    {
+      "id": "C04",
+      "name_zh": "刻隙",
+      "type": "attack",
+      "rarity": "common",
+      "tags_zh": [
+        "武技",
+        "镰刀",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "对一敌造成8真实伤害；若距离为负，再对其施加1易伤与1脆弱。",
+      "upgrade_changes_zh": "伤害11，易伤与脆弱各2。",
+      "reward_pool": true,
+      "source_line": 76
+    },
+    {
+      "id": "C05",
+      "name_zh": "镰面招架",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "镰刀"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "获得本回合1敏捷，再获得6基础格挡。若本回合在本牌之前打出过镰刀牌，抽1张牌。",
+      "upgrade_changes_zh": "临时敏捷2，基础格挡9。",
+      "reward_pool": true,
+      "source_line": 77
+    },
+    {
+      "id": "C06",
+      "name_zh": "引魔",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "获得4魔力与本回合2振奋。",
+      "upgrade_changes_zh": "魔力5，临时振奋3。",
+      "reward_pool": true,
+      "source_line": 78
+    },
+    {
+      "id": "C07",
+      "name_zh": "碎饼时间",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "食物"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "恢复3生命；仅半龙时额外获得2怒气。消耗。",
+      "upgrade_changes_zh": "恢复5，半龙额外怒气3。",
+      "reward_pool": true,
+      "source_line": 79
+    },
+    {
+      "id": "C08",
+      "name_zh": "磨牙",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "身体"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "获得5格挡与3荆棘；这份荆棘持续到下次自己的回合开始。仅半龙时额外获得3怒气。",
+      "upgrade_changes_zh": "格挡8，临时荆棘5，半龙额外怒气4。",
+      "reward_pool": true,
+      "source_line": 80
+    },
+    {
+      "id": "C09",
+      "name_zh": "血换锋",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "血"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "生命代价6。获得1能量；仅半龙时额外获得2怒气。消耗。",
+      "upgrade_changes_zh": "半龙额外怒气3；所有形态均额外抽1张牌。",
+      "reward_pool": true,
+      "source_line": 88
+    },
+    {
+      "id": "C10",
+      "name_zh": "咬合",
+      "type": "attack",
+      "rarity": "common",
+      "tags_zh": [
+        "武技",
+        "身体"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "对一敌造成10伤害，然后恢复2生命。",
+      "upgrade_changes_zh": "伤害14，恢复3。",
+      "reward_pool": true,
+      "source_line": 89
+    },
+    {
+      "id": "C11",
+      "name_zh": "横断",
+      "type": "attack",
+      "rarity": "common",
+      "tags_zh": [
+        "武技",
+        "镰刀"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "对所有敌人造成 `4＋S` 伤害两次。",
+      "upgrade_changes_zh": "每段改为 `6＋S`。",
+      "reward_pool": true,
+      "source_line": 90
+    },
+    {
+      "id": "C12",
+      "name_zh": "冰霜龙息",
+      "type": "attack",
+      "rarity": "common",
+      "tags_zh": [
+        "武技",
+        "身体",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 2
+      },
+      "form_gate": "dragon",
+      "effect_zh": "对所有敌人造成7伤害，然后各施加3冰冻。",
+      "upgrade_changes_zh": "伤害10，冰冻4。",
+      "reward_pool": true,
+      "source_line": 91
+    },
+    {
+      "id": "C13",
+      "name_zh": "霜刃",
+      "type": "attack",
+      "rarity": "common",
+      "tags_zh": [
+        "武技",
+        "镰刀",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "对一敌造成8伤害，施加4冰冻。",
+      "upgrade_changes_zh": "伤害11，冰冻5。",
+      "reward_pool": true,
+      "source_line": 92
+    },
+    {
+      "id": "C14",
+      "name_zh": "冰针",
+      "type": "attack",
+      "rarity": "common",
+      "tags_zh": [
+        "魔法",
+        "冰"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "对一敌造成4伤害两次，然后施加2冰冻。",
+      "upgrade_changes_zh": "每段伤害6，冰冻3。",
+      "reward_pool": true,
+      "source_line": 93
+    },
+    {
+      "id": "C15",
+      "name_zh": "霜墙",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "魔法",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 1,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "获得10格挡，对一敌施加2冰冻。",
+      "upgrade_changes_zh": "格挡14，冰冻3。",
+      "reward_pool": true,
+      "source_line": 94
+    },
+    {
+      "id": "C16",
+      "name_zh": "霜缚",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "魔法",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 1,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "对一敌施加4冰冻与1虚弱。",
+      "upgrade_changes_zh": "冰冻6，虚弱2。",
+      "reward_pool": true,
+      "source_line": 95
+    },
+    {
+      "id": "C17",
+      "name_zh": "刹那折跃",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 1,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "将距离设为-5或+5；抽1张牌。",
+      "upgrade_changes_zh": "额外获得5格挡。",
+      "reward_pool": true,
+      "source_line": 103
+    },
+    {
+      "id": "C18",
+      "name_zh": "解构",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "消耗另一张手牌，获得3魔力，抽1张牌。",
+      "upgrade_changes_zh": "魔力4，抽2张牌。",
+      "reward_pool": true,
+      "source_line": 104
+    },
+    {
+      "id": "C19",
+      "name_zh": "断面射线",
+      "type": "attack",
+      "rarity": "common",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "对一敌造成8真实伤害。本战每次真实打出此牌，使此张牌之后打出的基础伤害增加4；本次不加。",
+      "upgrade_changes_zh": "初始伤害12，每次仍增加4。",
+      "reward_pool": true,
+      "source_line": 105
+    },
+    {
+      "id": "C20",
+      "name_zh": "假寐",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "获得6格挡与1再生，抽2张牌。",
+      "upgrade_changes_zh": "格挡9，再生2。",
+      "reward_pool": true,
+      "source_line": 106
+    },
+    {
+      "id": "C21",
+      "name_zh": "苍白祝祷",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "魔法"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "获得本回合3振奋，抽1张牌。",
+      "upgrade_changes_zh": "临时振奋5。",
+      "reward_pool": true,
+      "source_line": 107
+    },
+    {
+      "id": "C22",
+      "name_zh": "舔舐伤口",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "身体"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "恢复6生命，获得6格挡。",
+      "upgrade_changes_zh": "恢复8，格挡8。",
+      "reward_pool": true,
+      "source_line": 108
+    },
+    {
+      "id": "C23",
+      "name_zh": "收镰",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "空间"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "从弃牌堆选择1张镰刀牌加入手牌；获得4格挡。没有可选牌时仍获得格挡。",
+      "upgrade_changes_zh": "格挡7。",
+      "reward_pool": true,
+      "source_line": 109
+    },
+    {
+      "id": "C24",
+      "name_zh": "龙胃",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "身体"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "消耗另一张手牌，恢复2生命；仅半龙时额外获得2怒气。",
+      "upgrade_changes_zh": "恢复3，半龙额外怒气3。",
+      "reward_pool": true,
+      "source_line": 110
+    },
+    {
+      "id": "C25",
+      "name_zh": "寒意侵袭",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "魔法",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 1,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "对所有敌人施加1虚弱与1易伤。",
+      "upgrade_changes_zh": "虚弱与易伤各2。",
+      "reward_pool": true,
+      "source_line": 118
+    },
+    {
+      "id": "C26",
+      "name_zh": "龙威",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "身体"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "对一敌施加2虚弱；若本回合已实际失去过生命，再施加2易伤并抽1张牌。",
+      "upgrade_changes_zh": "虚弱与条件易伤各3。",
+      "reward_pool": true,
+      "source_line": 119
+    },
+    {
+      "id": "C27",
+      "name_zh": "星衣编织",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "魔法"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "获得2敏捷与1人工制品。消耗。",
+      "upgrade_changes_zh": "敏捷3，人工制品2。",
+      "reward_pool": true,
+      "source_line": 120
+    },
+    {
+      "id": "C28",
+      "name_zh": "龙息调律",
+      "type": "skill",
+      "rarity": "common",
+      "tags_zh": [
+        "身体"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "抽2张牌；若本回合已实际恢复过生命，获得1能量。消耗。",
+      "upgrade_changes_zh": "抽3张牌。",
+      "reward_pool": true,
+      "source_line": 121
+    },
+    {
+      "id": "U01",
+      "name_zh": "刃上结界",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 1,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "每张镰刀攻击结算后，获得4格挡。",
+      "upgrade_changes_zh": "每次格挡6。",
+      "reward_pool": true,
+      "source_line": 131
+    },
+    {
+      "id": "U02",
+      "name_zh": "沸血",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "血"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "每次实际失去生命，获得1力量。不按失血点数逐点触发。",
+      "upgrade_changes_zh": "激活时额外获得2力量。",
+      "reward_pool": true,
+      "source_line": 132
+    },
+    {
+      "id": "U03",
+      "name_zh": "凝鳞",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "身体"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "每次实际恢复生命，获得等量格挡。激活时获得6格挡。",
+      "upgrade_changes_zh": "激活时格挡10。",
+      "reward_pool": true,
+      "source_line": 133
+    },
+    {
+      "id": "U04",
+      "name_zh": "血铸",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "血"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 2
+      },
+      "form_gate": "dragon",
+      "effect_zh": "每次治疗每溢出2点，获得1本回合力量，向下取整，不跨次积余。激活后恢复3生命。",
+      "upgrade_changes_zh": "激活后恢复6。",
+      "reward_pool": true,
+      "source_line": 134
+    },
+    {
+      "id": "U05",
+      "name_zh": "寒血",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "血",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "每次实际失去生命，对所有敌人施加2冰冻。不按失血点数逐点触发。",
+      "upgrade_changes_zh": "每次冰冻3。",
+      "reward_pool": true,
+      "source_line": 135
+    },
+    {
+      "id": "U06",
+      "name_zh": "追猎折跃",
+      "type": "attack",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "武技",
+        "身体",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "将距离设为-5，对一敌造成 `12＋其当前冰冻层数` 的真实伤害；不移除冰冻，抽1张牌。",
+      "upgrade_changes_zh": "改为 `16＋2×冰冻层数`。",
+      "reward_pool": true,
+      "source_line": 136
+    },
+    {
+      "id": "U07",
+      "name_zh": "饥渴",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "身体"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 1
+      },
+      "form_gate": "dragon",
+      "effect_zh": "半龙形态下，每当实际消耗一张牌，获得1怒气；换成其他形态期间不产怒。",
+      "upgrade_changes_zh": "激活时额外获得3怒气，仍须为半龙。",
+      "reward_pool": true,
+      "source_line": 137
+    },
+    {
+      "id": "U08",
+      "name_zh": "霜之学识",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "每当一名敌人被你冻结，获得1振奋。",
+      "upgrade_changes_zh": "激活时额外获得2振奋。",
+      "reward_pool": true,
+      "source_line": 138
+    },
+    {
+      "id": "U09",
+      "name_zh": "碎冰裁决",
+      "type": "attack",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "空间",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "移除一敌至多8冰冻，对其造成 `10＋3×移除层数` 的一段真实伤害。0层也可使用。",
+      "upgrade_changes_zh": "基础伤害14，每层增加4。",
+      "reward_pool": true,
+      "source_line": 146
+    },
+    {
+      "id": "U10",
+      "name_zh": "冰镜庇护",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "每回合开始，距离为正时获得6格挡，否则获得3格挡。",
+      "upgrade_changes_zh": "远距格挡8，否则4。",
+      "reward_pool": true,
+      "source_line": 147
+    },
+    {
+      "id": "U11",
+      "name_zh": "寒潮",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "每张冰系攻击或技能结算后，对所有敌人施加1冰冻。",
+      "upgrade_changes_zh": "每次冰冻2。",
+      "reward_pool": true,
+      "source_line": 148
+    },
+    {
+      "id": "U12",
+      "name_zh": "霜河归流",
+      "type": "skill",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "空间",
+        "冰"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "选择一敌，把其他每个敌人至多6冰冻搬给它，再加4冰冻，合并检查一次冻结；抽1张牌。",
+      "upgrade_changes_zh": "搬运上限8，额外冰冻6。",
+      "reward_pool": true,
+      "source_line": 149
+    },
+    {
+      "id": "U13",
+      "name_zh": "终焉刻痕",
+      "type": "attack",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "镰刀",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "对一敌造成10伤害，再施加4终焉。",
+      "upgrade_changes_zh": "伤害14，终焉6。",
+      "reward_pool": true,
+      "source_line": 150
+    },
+    {
+      "id": "U14",
+      "name_zh": "终末宣告",
+      "type": "skill",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "保留。对一敌施加4终焉；若其有冰冻，额外施加4终焉。",
+      "upgrade_changes_zh": "基础终焉6，条件追加仍为4。",
+      "reward_pool": true,
+      "source_line": 151
+    },
+    {
+      "id": "U15",
+      "name_zh": "省略咏唱",
+      "type": "skill",
+      "rarity": "uncommon",
+      "tags_zh": [],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "消耗另一张手牌，抽2张牌；可令一项正在进行的吟唱立即完成。消耗本牌。",
+      "upgrade_changes_zh": "抽3张牌。",
+      "reward_pool": true,
+      "source_line": 152
+    },
+    {
+      "id": "U16",
+      "name_zh": "远近之理",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 1,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "每当入近，获得1本回合力量；每当入远，获得4格挡。",
+      "upgrade_changes_zh": "临时力量2，格挡6。",
+      "reward_pool": true,
+      "source_line": 153
+    },
+    {
+      "id": "U17",
+      "name_zh": "裂界长吟",
+      "type": "attack",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "镰刀",
+        "空间"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 5,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "保留。吟唱1。对一敌造成 `18＋4N` 的真实伤害；N为永久牌组中的魔法牌张数。",
+      "upgrade_changes_zh": "改为 `24＋5N`，仍需吟唱。",
+      "reward_pool": true,
+      "source_line": 163
+    },
+    {
+      "id": "U18",
+      "name_zh": "借位嫁祸",
+      "type": "skill",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "获得8格挡；可从自己或一敌选择冰冻、终焉、虚弱、易伤、脆弱中的一种，将至多8层移给另一个敌人。",
+      "upgrade_changes_zh": "格挡11，搬运上限12。",
+      "reward_pool": true,
+      "source_line": 164
+    },
+    {
+      "id": "U19",
+      "name_zh": "星流灌注",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "每回合你的第一张魔法攻击结算后，抽2张牌。",
+      "upgrade_changes_zh": "能量费用0。",
+      "reward_pool": true,
+      "source_line": 165
+    },
+    {
+      "id": "U20",
+      "name_zh": "环刃",
+      "type": "attack",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "武技",
+        "镰刀"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 2
+      },
+      "form_gate": "dragon",
+      "effect_zh": "对一敌造成4伤害三次；若本回合你已经实际恢复过生命，再攻击一次。",
+      "upgrade_changes_zh": "每段伤害6。",
+      "reward_pool": true,
+      "source_line": 166
+    },
+    {
+      "id": "U21",
+      "name_zh": "撕咬不休",
+      "type": "attack",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "武技",
+        "身体"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 2
+      },
+      "form_gate": "dragon",
+      "effect_zh": "对一敌造成7伤害并恢复2生命，重复两次。目标已死时跳过剩余伤害，仍完成治疗。",
+      "upgrade_changes_zh": "每段伤害9，每次恢复3。",
+      "reward_pool": true,
+      "source_line": 167
+    },
+    {
+      "id": "U22",
+      "name_zh": "空间书签",
+      "type": "skill",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "抽3张牌，再将1张手牌放回抽牌堆顶。",
+      "upgrade_changes_zh": "抽4张牌。",
+      "reward_pool": true,
+      "source_line": 168
+    },
+    {
+      "id": "U23",
+      "name_zh": "血色休止",
+      "type": "skill",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "身体",
+        "血"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 2
+      },
+      "form_gate": "dragon",
+      "effect_zh": "恢复6生命，获得3再生，抽2张牌。",
+      "upgrade_changes_zh": "恢复10，再生4。",
+      "reward_pool": true,
+      "source_line": 169
+    },
+    {
+      "id": "U24",
+      "name_zh": "魔刃共鸣",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 1,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "每打出一张实际支付必需魔力费用的牌，获得1本回合力量；每打出一张实际支付必需怒气费用的牌，获得1本回合振奋。",
+      "upgrade_changes_zh": "激活时额外获得本回合2力量与2振奋。",
+      "reward_pool": true,
+      "source_line": 170
+    },
+    {
+      "id": "U25",
+      "name_zh": "诅咒余韵",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "每回合前2张成功施加或搬运指定负面的牌结算后，抽1张牌；若当前为初始／魔法使，再获得1魔力。每张牌最多触发1次。",
+      "upgrade_changes_zh": "每回合前3张。",
+      "reward_pool": true,
+      "source_line": 178
+    },
+    {
+      "id": "U26",
+      "name_zh": "百相加护",
+      "type": "power",
+      "rarity": "uncommon",
+      "tags_zh": [],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "每回合前3种不同的指定正面状态实际增加时，每种抽1张牌并获得3格挡。同名状态本回合不重复触发。",
+      "upgrade_changes_zh": "每种格挡5。",
+      "reward_pool": true,
+      "source_line": 179
+    },
+    {
+      "id": "U27",
+      "name_zh": "螺旋猎舞",
+      "type": "attack",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "武技",
+        "镰刀",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 2
+      },
+      "form_gate": "dragon",
+      "effect_zh": "对一敌造成12伤害。本战每次真实打出此牌，使此张牌之后打出的基础伤害加成增加50个百分点；以初始伤害为基准，本次不加。",
+      "upgrade_changes_zh": "初始伤害16，每次仍增加50个百分点。",
+      "reward_pool": true,
+      "source_line": 180
+    },
+    {
+      "id": "U28",
+      "name_zh": "灾厄汇编",
+      "type": "attack",
+      "rarity": "uncommon",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 3,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "对一敌造成 `8＋6D` 的真实伤害；D为该敌人指定负面状态的种类数。",
+      "upgrade_changes_zh": "改为 `12＋8D`。",
+      "reward_pool": true,
+      "source_line": 181
+    },
+    {
+      "id": "R01",
+      "name_zh": "世界切面",
+      "type": "attack",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 3,
+        "mana": 8,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "吟唱1。对所有敌人造成72真实伤害。",
+      "upgrade_changes_zh": "伤害96，仍需吟唱。",
+      "reward_pool": true,
+      "source_line": 193
+    },
+    {
+      "id": "R02",
+      "name_zh": "时隙封存",
+      "type": "power",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 2,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "本场你的所有魔法在准备完成后改为储存；获得1张T03术式解放。只有完成吟唱的大魔法才能入库。同名能力不叠加。",
+      "upgrade_changes_zh": "能量费用1。",
+      "reward_pool": true,
+      "source_line": 194
+    },
+    {
+      "id": "R03",
+      "name_zh": "零度加冕",
+      "type": "attack",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "冰"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 6,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "吟唱1。对所有敌人造成20伤害，再各施加10冰冻。",
+      "upgrade_changes_zh": "伤害28，冰冻14，仍需吟唱。",
+      "reward_pool": true,
+      "source_line": 195
+    },
+    {
+      "id": "R04",
+      "name_zh": "永冬",
+      "type": "power",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "冰"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 4,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "自己回合结束时，对所有敌人施加3冰冻；每当敌人被你冻结，若当前为初始／魔法使则获得2魔力。",
+      "upgrade_changes_zh": "回合结束冰冻5。",
+      "reward_pool": true,
+      "source_line": 196
+    },
+    {
+      "id": "R05",
+      "name_zh": "食界之镰",
+      "type": "attack",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "镰刀",
+        "空间"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 3,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "对一敌造成18真实伤害；效果结算后，本局此张原牌的基础伤害永久增加3。消耗。",
+      "upgrade_changes_zh": "初始伤害24，成长仍为每次3。",
+      "reward_pool": true,
+      "source_line": 206
+    },
+    {
+      "id": "R06",
+      "name_zh": "赤镰盛宴",
+      "type": "attack",
+      "rarity": "rare",
+      "tags_zh": [
+        "武技",
+        "镰刀",
+        "血"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 0,
+        "rage": 5
+      },
+      "form_gate": "dragon",
+      "effect_zh": "对所有敌人造成 `8＋向下取整(当前格挡/2)` 伤害；不消费格挡。之后恢复实际造成总生命伤害的三分之一，向下取整。",
+      "upgrade_changes_zh": "基础项由8改为12。",
+      "reward_pool": true,
+      "source_line": 207
+    },
+    {
+      "id": "R07",
+      "name_zh": "饕餮",
+      "type": "attack",
+      "rarity": "rare",
+      "tags_zh": [
+        "武技",
+        "身体"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 2
+      },
+      "form_gate": "dragon",
+      "effect_zh": "对一敌造成14伤害。斩杀时，本局生命上限永久增加3，然后恢复3生命。消耗。",
+      "upgrade_changes_zh": "伤害18，上限增加4，恢复4。",
+      "reward_pool": true,
+      "source_line": 208
+    },
+    {
+      "id": "R08",
+      "name_zh": "装满甜甜圈的口袋",
+      "type": "skill",
+      "rarity": "rare",
+      "tags_zh": [
+        "食物"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "将3张临时的T02甜甜圈加入手牌。消耗。",
+      "upgrade_changes_zh": "生成4张，仍为未升级版。",
+      "reward_pool": true,
+      "source_line": 209
+    },
+    {
+      "id": "R09",
+      "name_zh": "舍弃此岸",
+      "type": "attack",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 4,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "消耗其余手牌。每实际消耗一张，对所有敌人造成7真实伤害。消耗本牌。",
+      "upgrade_changes_zh": "每张对应伤害9。",
+      "reward_pool": true,
+      "source_line": 217
+    },
+    {
+      "id": "R10",
+      "name_zh": "绝对回收",
+      "type": "skill",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 3,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "从弃牌堆选择至多3张牌加入手牌，本回合这些牌的能量费用降低1，最低0。消耗。",
+      "upgrade_changes_zh": "最多回收4张。",
+      "reward_pool": true,
+      "source_line": 218
+    },
+    {
+      "id": "R11",
+      "name_zh": "终焉帷幕",
+      "type": "power",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 3,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "每当实际消耗一张牌，对所有敌人施加1终焉，并获得2格挡。",
+      "upgrade_changes_zh": "每次终焉2，格挡3。",
+      "reward_pool": true,
+      "source_line": 219
+    },
+    {
+      "id": "R12",
+      "name_zh": "终末咏唱",
+      "type": "skill",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 5,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "吟唱1。对一敌施加12终焉；若其有冰冻，额外施加4终焉。",
+      "upgrade_changes_zh": "基础终焉16，条件追加仍为4，仍需吟唱。",
+      "reward_pool": true,
+      "source_line": 220
+    },
+    {
+      "id": "R13",
+      "name_zh": "星霜齐落",
+      "type": "attack",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "冰",
+        "空间"
+      ],
+      "cost": {
+        "energy": "X",
+        "mana": 3,
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "对所有敌人造成7真实伤害并施加1冰冻，重复X次。X为实际支付的能量。无吟唱。",
+      "upgrade_changes_zh": "每段伤害10。",
+      "reward_pool": true,
+      "source_line": 230
+    },
+    {
+      "id": "R14",
+      "name_zh": "穹界坠落",
+      "type": "attack",
+      "rarity": "rare",
+      "tags_zh": [
+        "魔法",
+        "空间"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": "X",
+        "rage": 0
+      },
+      "form_gate": "initial_or_mage",
+      "effect_zh": "需要至少5魔力。吟唱1。对一敌造成 `10X` 真实伤害，X为实际支付的魔力。消耗。",
+      "upgrade_changes_zh": "改为 `12X`，仍需吟唱。",
+      "reward_pool": true,
+      "source_line": 231
+    },
+    {
+      "id": "R15",
+      "name_zh": "暴食龙舞",
+      "type": "attack",
+      "rarity": "rare",
+      "tags_zh": [
+        "武技",
+        "身体"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": "X"
+      },
+      "form_gate": "dragon",
+      "effect_zh": "需要至少1怒气。对一敌造成3伤害，再恢复2生命，重复X次。X为实际支付的怒气；目标死亡后，未发动的攻击及其治疗均跳过。",
+      "upgrade_changes_zh": "每段伤害5。",
+      "reward_pool": true,
+      "source_line": 232
+    },
+    {
+      "id": "R16",
+      "name_zh": "万象归刃",
+      "type": "attack",
+      "rarity": "rare",
+      "tags_zh": [
+        "武技",
+        "镰刀"
+      ],
+      "cost": {
+        "energy": 2,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "对所有敌人造成8伤害，重复 `1＋S` 次；S为自己的指定正面状态种类数。",
+      "upgrade_changes_zh": "每段伤害11。",
+      "reward_pool": true,
+      "source_line": 233
+    },
+    {
+      "id": "T01",
+      "name_zh": "龙咬",
+      "type": "attack",
+      "rarity": "generated",
+      "tags_zh": [
+        "武技",
+        "身体"
+      ],
+      "cost": {
+        "energy": 1,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "对一敌造成8伤害；攻击后若有至少1怒气，自动支付1怒气并恢复1生命。无怒气仍能攻击。",
+      "upgrade_changes_zh": "伤害11，条件性付怒与治疗不变。",
+      "reward_pool": false,
+      "source_line": 243
+    },
+    {
+      "id": "T02",
+      "name_zh": "甜甜圈",
+      "type": "skill",
+      "rarity": "generated",
+      "tags_zh": [
+        "食物"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "保留。恢复3生命；初始／魔法使获得1魔力，半龙获得1怒气，只执行当前形态分支。消耗。",
+      "upgrade_changes_zh": "恢复5，对应资源2。",
+      "reward_pool": false,
+      "source_line": 244
+    },
+    {
+      "id": "T03",
+      "name_zh": "术式解放",
+      "type": "skill",
+      "rarity": "generated",
+      "tags_zh": [
+        "控制"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "保留。按储存顺序释放全部已储存魔法，清空本次取出的记录；打出后回到手牌。储存为空时不能打出。",
+      "upgrade_changes_zh": "本场首次打出升级版时获得6格挡；按玩家记录一次，不因回手或复制重置。",
+      "reward_pool": false,
+      "source_line": 245
+    },
+    {
+      "id": "A01",
+      "name_zh": "二相一身",
+      "type": "skill",
+      "rarity": "ancient",
+      "tags_zh": [
+        "控制"
+      ],
+      "cost": {
+        "energy": 0,
+        "mana": 0,
+        "rage": 0
+      },
+      "form_gate": "any",
+      "effect_zh": "固有。保留。在魔法使与半龙间切换，当前魔力与怒气随换形全额1:1转化，原资源清空。初始形态首次可选择任一种，选魔法使则原样保留魔力。打出后回手，不消耗，变化仅限当前战斗。",
+      "upgrade_changes_zh": "本场首次打出升级版时抽2张牌；按玩家记录一次，不因回手、复制或换形重置。",
+      "reward_pool": false,
+      "source_line": 257
+    }
+  ]
+}
