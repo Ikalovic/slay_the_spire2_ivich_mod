@@ -1,4 +1,40 @@
-# 2026-09-28 版本0.2.0验证记录
+# 验证记录
+
+## 0.3.0 美术接入（2026-09-28）
+
+执行：
+
+```sh
+python3 tools/stage_art.py --source /home/ika/temp/slay_mod --check
+python3 tools/stage_art.py --source /home/ika/temp/slay_mod
+python3 tools/build_art.py --godot /tmp/ivich-tools/Godot_v4.5.1-stable_linux.x86_64
+python3 tools/build.py
+python3 tools/package_release.py --art
+```
+
+| 检查 | 结果与范围 |
+| --- | --- |
+| Python | 25/25：原目录/打包检查及源图覆盖、固定SHA256、禁止废案和源目录写入、PCK缺失/过期/替换拒绝 |
+| 规则与异步法术 | 53/53、9/9 |
+| 真实程序集 | 15/15；Release编译0警告0错误；19个Harmony目标安装及清理成功，包含角色头像按钮 |
+| Godot导入 | 168个PNG目标；原图按字节复制，导入器生成不同尺寸的显示纹理 |
+| 隔离PCK加载 | 337项资源加载通过；场景成功实例化；包内508个文件均属于Ivich或Godot必要缓存/元数据 |
+| 渲染预览 | 从PCK加载并渲染选角背景、头像、镰刀、代表卡图及两形态预览；已检查完整构图与显示比例 |
+| 原生场景尺寸核查 | 从本机游戏PCK只读提取的角色选择、遗物、卡牌场景确认IgnoreSize/FitWidth，不按原图尺寸撑大控件 |
+
+合计102项自动检查，另有337项实际资源加载检查。日志为 `artifacts/verification-0.3.0.log`、`artifacts/art-build-0.3.0.log`；资源证明在 `artifacts/art/Ivich.pck.validation.json`，记录Godot版本、PCK/源工程SHA256、每个加载资源的类型与尺寸。Godot编辑器下载经过官方SHA-512校验，实测版本为 `4.5.1.stable.official.f62fdbde1`。
+
+PCK中的B03小图为170×256、大图666×1000；图集画布分别为350×266、1325×1007，均严格25:19并保留整张纵图。头像图集420×420。两张形态选择图集为1650×1254。纹理以原生控件大小绘制，不按这些像素尺寸铺满界面。
+
+预览输出在 `artifacts/art-preview/selection.png`、`cards.png`。它们是独立Godot资源预览，文字布局用于检查构图，不是原生游戏截图。预览驱动报告不支持切换V-Sync，但两张截图均成功保存，未出现资源加载错误。
+
+导出验证脚本首次运行暴露GDScript节点类型推断错误，改为明确Node类型后重跑成功；完整红绿日志保留。独立预览脚本首次赋值顺序导致尺寸被纹理最小值撑大，调整为先设置IgnoreSize后重新渲染并检查；另行核实了游戏真实场景的模式。
+
+0.2.0用户游戏日志已确认Ivich初始化与选中 `CHARACTER.IVICH-IVICH_CHARACTER`。本轮未替换用户正在使用的游戏安装，也未宣称0.3.0已经通过游戏内交互、战斗、存档或联机验证。三形态战斗动画依然使用占位；带灰底人物母版只用于展示。
+
+---
+
+## 0.2.0 原始构建记录（历史）
 
 执行命令：
 

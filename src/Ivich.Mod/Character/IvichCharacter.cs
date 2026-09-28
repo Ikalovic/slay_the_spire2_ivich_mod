@@ -1,5 +1,6 @@
 using BaseLib.Abstracts;
 using Godot;
+using Ivich.Mod.Assets;
 using Ivich.Mod.Cards;
 using Ivich.Mod.Relics;
 using MegaCrit.Sts2.Core.Entities.Characters;
@@ -8,6 +9,14 @@ namespace Ivich.Mod.Character;
 
 public sealed class IvichCharacter : PlaceholderCharacterModel
 {
+    public override string CustomCharacterSelectBg => ArtPaths.Available(ArtPaths.SelectionScene, base.CustomCharacterSelectBg);
+    // Native character-select getters require CompressedTexture2D. The button patch below
+    // substitutes the cropped Texture2D only after the native initialization has finished.
+    public override string? CustomCharacterSelectIconPath => ArtPaths.Available(ArtPaths.InitialPortrait, base.CustomCharacterSelectIconPath!);
+    public override string? CustomCharacterSelectLockedIconPath => ArtPaths.Available(ArtPaths.InitialPortrait, base.CustomCharacterSelectLockedIconPath!);
+    public override string CustomIconPath => ArtPaths.Available(ArtPaths.IconScene, base.CustomIconPath);
+    public override string? CustomIconTexturePath => ArtPaths.Available(ArtPaths.Avatar, base.CustomIconTexturePath!);
+    public override string? CustomIconOutlineTexturePath => ArtPaths.Available(ArtPaths.Avatar, base.CustomIconOutlineTexturePath!);
     public override CharacterGender Gender => CharacterGender.Feminine;
     public override Color NameColor => new("b9ddff");
     public override int StartingHp => 88;

@@ -1,5 +1,6 @@
 using BaseLib.Abstracts;
 using Ivich.Core;
+using Ivich.Mod.Assets;
 using Ivich.Mod.Character;
 using Ivich.Mod.Mechanics;
 using MegaCrit.Sts2.Core.Commands;
@@ -44,7 +45,7 @@ public abstract class FormChoice(Form form, string title, string description)
     public override bool CanBeGeneratedInCombat => false;
     protected override bool IsPlayable => false;
     public override List<(string, string)> Localization => new CardLoc(title, description);
-    public override string PortraitPath => ModelDb.Card<DefendIronclad>().PortraitPath;
+    public override string PortraitPath => ArtPaths.FormPortrait(form, ModelDb.Card<DefendIronclad>().PortraitPath);
     public override string? CustomPortraitPath => PortraitPath;
     public override string BetaPortraitPath => PortraitPath;
     protected override Task OnPlay(PlayerChoiceContext context, CardPlay play) => Task.CompletedTask;

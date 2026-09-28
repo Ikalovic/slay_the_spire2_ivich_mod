@@ -2,6 +2,7 @@ using BaseLib.Abstracts;
 using BaseLib.Hooks;
 using BaseLib.Utils;
 using Ivich.Mod.Cards;
+using Ivich.Mod.Assets;
 using Ivich.Mod.Character;
 using Ivich.Mod.Mechanics;
 using Ivich.Mod.Resources;
@@ -31,9 +32,9 @@ namespace Ivich.Mod.Relics;
 public sealed class MoonEyeScythe : CustomRelicModel, IAfterSpendResource<ManaResource>, IAfterSpendResource<RageResource>
 {
     public override RelicRarity Rarity => RelicRarity.Starter;
-    public override string PackedIconPath => ModelDb.Relic<BurningBlood>().PackedIconPath;
-    protected override string PackedIconOutlinePath => "res://images/atlases/relic_outline_atlas.sprites/burning_blood.tres";
-    protected override string BigIconPath => "res://images/relics/burning_blood.png";
+    public override string PackedIconPath => ArtPaths.Available(ArtPaths.Scythe, ModelDb.Relic<BurningBlood>().PackedIconPath);
+    protected override string PackedIconOutlinePath => ArtPaths.Available(ArtPaths.Scythe, "res://images/atlases/relic_outline_atlas.sprites/burning_blood.tres");
+    protected override string BigIconPath => ArtPaths.Available(ArtPaths.Scythe, "res://images/relics/burning_blood.png");
     public override List<(string, string)> Localization => new RelicLoc("月眼之镰", "记录依维希的形态与本局成长。初始形态每战获得3魔力，容量5，不自动回魔。\n累计支付50魔力可在营火进阶魔法使；累计失血50且支付50能量可进阶半龙。", "银白的镰刃之中，一只眼睛静静注视。");
     [SavedProperty] public int FormValue { get; set; }
     [SavedProperty] public int ManaSpent { get; set; }

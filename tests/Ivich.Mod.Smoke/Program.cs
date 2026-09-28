@@ -316,7 +316,7 @@ internal static class Smoke
         _mod.GetType("Ivich.Mod.MainFile", true)!.GetMethod("Initialize")!.Invoke(null, null);
         var patched = OwnedPatchedMethods();
         Require(patched.Length > 0, "Initialize did not install any Ivich Harmony patches");
-        foreach (var target in new[] { "Hook", "CardModel", "CreatureCmd", "Creature", "ArchaicTooth", "StrengthPower", "WeakPower" })
+        foreach (var target in new[] { "Hook", "CardModel", "CreatureCmd", "Creature", "ArchaicTooth", "StrengthPower", "WeakPower", "NCharacterSelectButton" })
             Require(patched.Any(method => method.DeclaringType?.Name == target), $"Expected API boundary {target} was not patched");
         Console.WriteLine($"Installed {patched.Length} actual Ivich patch targets; removing them at exit.");
     }

@@ -2,9 +2,10 @@
 name="Resources"
 platform="Windows Desktop"
 runnable=false
-export_filter="all_resources"
+export_filter="resources"
+export_files=PackedStringArray()
 include_filter=""
-exclude_filter="import-manifest.json"
+exclude_filter="import-manifest.json,*.cs,*.gd,*.gdc,*.dll"
 export_path=""
 script_export_mode=2
 

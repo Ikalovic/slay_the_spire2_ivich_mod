@@ -1,0 +1,354 @@
+{
+  "schema_version": 1,
+  "selection_note": "Selected for integration on 2026-09-28: the 37 explicit current versions in card_refresh_candidates_20260928.md, plus the latest retained versions for the remaining cards. Historic pending-review labels are retained in source records; this map fixes the integration choices. Source PNGs are copied unchanged.",
+  "cards": {
+    "A01": {
+      "source": "art/masters/cards/card_A01_v001.png",
+      "sha256": "1470b9bf759dcd8727ff03dd0f8cc70ce4964282e794acfe46492c38c6395bcb"
+    },
+    "B01": {
+      "source": "art/masters/cards/card_B01_v008.png",
+      "sha256": "66583420505e567fd7c60ec4e4e4ee59f9a95ef90a4dbf24a36d757ee549b6ac"
+    },
+    "B02": {
+      "source": "art/masters/cards/card_B02_v008.png",
+      "sha256": "a64933c5aa0843f28c4491ebf75c2fdd9fcf7586a18187c452052fb5ba1d3945"
+    },
+    "B03": {
+      "source": "art/masters/cards/card_B03_v005.png",
+      "sha256": "8b8c82e0b8713da719004815b704b20857efa5315a167882f47e27b7f5fbe96a"
+    },
+    "B04": {
+      "source": "art/masters/cards/card_B04_v001.png",
+      "sha256": "dba45f8f270e572c353aa226f917e87bb3bb53253dd187a7fe9ac9ba8289931d"
+    },
+    "B05": {
+      "source": "art/masters/cards/card_B05_v007.png",
+      "sha256": "e128a663b07ae6e78b474e4b81eb9a29a32bb5f583b06d11775a9d1175f3fe95"
+    },
+    "B06": {
+      "source": "art/masters/cards/card_B06_v008.png",
+      "sha256": "0a9cb7cb69af2743aa8dcbdba632012baf6b8a25d1ce66ad883d7b3e0a1af0f1"
+    },
+    "C01": {
+      "source": "art/masters/cards/card_C01_v003.png",
+      "sha256": "b0f49cd9010ef5299a528933baa791a24a9feb90f582b82e4da7cdd7a821b025"
+    },
+    "C02": {
+      "source": "art/masters/cards/card_C02_v002.png",
+      "sha256": "c4920757447652a790d074b9c9477c840ee0277686c39f1322aa5858bb56e5e4"
+    },
+    "C03": {
+      "source": "art/masters/cards/card_C03_v005.png",
+      "sha256": "7a42dfdf663e83602d39e0f9c5775c41450b4973bef8979edfd111847e007be4"
+    },
+    "C04": {
+      "source": "art/masters/cards/card_C04_v005.png",
+      "sha256": "36c989c05c9b7cef5a8cbfef361e554557be1f571f62b388cd911db9d02a0a3d"
+    },
+    "C05": {
+      "source": "art/masters/cards/card_C05_v004.png",
+      "sha256": "05bf1d0cd6ee61820cd11d99610106d42cb5b0097ddc0b98bb3aff4ec3e19e83"
+    },
+    "C06": {
+      "source": "art/masters/cards/card_C06_v008.png",
+      "sha256": "bfef709596f2020ab140442d266b12e81e3eedc851d10076a7605c5908d5fde8"
+    },
+    "C07": {
+      "source": "art/masters/cards/card_C07_v001.png",
+      "sha256": "1d7b303450b3cf4d37e7bf52ee23c49fa4af2e09ee9a0833fe8377ed77943b8b"
+    },
+    "C08": {
+      "source": "art/masters/cards/card_C08_v001.png",
+      "sha256": "12686a32ddd326ec4492cf822014733b24d6563ee84aa3003c3a59b81b81217a"
+    },
+    "C09": {
+      "source": "art/masters/cards/card_C09_v005.png",
+      "sha256": "86114b06f9f5edc935f1ef6b1b0969f411b66c850a08f6e501d7d65c7df956a8"
+    },
+    "C10": {
+      "source": "art/masters/cards/card_C10_v001.png",
+      "sha256": "89a8613fe8118d903a03f47392f0f5616ff1dcb8a47af3e3d5d1a5fb379eb6b6"
+    },
+    "C11": {
+      "source": "art/masters/cards/card_C11_v004.png",
+      "sha256": "daad0ae32088f60a4f18c8709de7001c10bb6d499224261d54ecb79a217efac5"
+    },
+    "C12": {
+      "source": "art/masters/cards/card_C12_v001.png",
+      "sha256": "90111b3a50a7f2f28559510575319b2922e76e580c3850593b6b17432581a777"
+    },
+    "C13": {
+      "source": "art/masters/cards/card_C13_v004.png",
+      "sha256": "60ae7c0752da2572a3d37d54679b3bc46d9dd98c410ec0ba8d2ba28b12b7b1ee"
+    },
+    "C14": {
+      "source": "art/masters/cards/card_C14_v002.png",
+      "sha256": "dbe5e33e9d79b753f45f4534232cc389f911af3b199afba976c17368caf9e84a"
+    },
+    "C15": {
+      "source": "art/masters/cards/card_C15_v001.png",
+      "sha256": "c7ea5fe8bd7c52f7c14f23e501c55ad8033ee3938c283e98f5d9601f3e25217b"
+    },
+    "C16": {
+      "source": "art/masters/cards/card_C16_v002.png",
+      "sha256": "015c5141d8c5281c92ee41e28dc6ffdc4226b66acdd65467a4da2e1c8b45d30f"
+    },
+    "C17": {
+      "source": "art/masters/cards/card_C17_v001.png",
+      "sha256": "8533c491b5c5eb4a36b5969fceb98e5c8ee3705a256f547417882239751ce5bf"
+    },
+    "C18": {
+      "source": "art/masters/cards/card_C18_v002.png",
+      "sha256": "0a8f4267d92ca6bac55def7bb409594be477893a04de9c2a4a2753a7e627b2e5"
+    },
+    "C19": {
+      "source": "art/masters/cards/card_C19_v002.png",
+      "sha256": "480dbb9981813205bc15aae310509b97e4e7fc65e700eb3f3facc87f010ce9f0"
+    },
+    "C20": {
+      "source": "art/masters/cards/card_C20_v001.png",
+      "sha256": "64a497a4a38581da7ba7a422108ce982552a0ed768bbad96454e7e60b6fe3c0f"
+    },
+    "C21": {
+      "source": "art/masters/cards/card_C21_v001.png",
+      "sha256": "c389b46c86b2bc86a910dba027635e746bee2e24acf5a5c23e6003640823957d"
+    },
+    "C22": {
+      "source": "art/masters/cards/card_C22_v001.png",
+      "sha256": "ec6bba7e780d4f22ef67b195cee1aedd546ade0038b8c8a9c8781fa7599b2695"
+    },
+    "C23": {
+      "source": "art/masters/cards/card_C23_v009.png",
+      "sha256": "03004850d82401dff980f23089757ef038c1718dd4761b0903f5fe6344921895"
+    },
+    "C24": {
+      "source": "art/masters/cards/card_C24_v001.png",
+      "sha256": "9f1893b6568f5f5efac23ffa00f58c2194564969503862686b793774612070ed"
+    },
+    "C25": {
+      "source": "art/masters/cards/card_C25_v002.png",
+      "sha256": "bc719db1417b617f94218ecb651e87ef212eb875d84a85174d226db7ec50f2e9"
+    },
+    "C26": {
+      "source": "art/masters/cards/card_C26_v001.png",
+      "sha256": "44c8fefbe04c5fa38fc2e326dd1b0070b34ff2b59860ca4eb72addb3fb54d2e7"
+    },
+    "C27": {
+      "source": "art/masters/cards/card_C27_v002.png",
+      "sha256": "8a84d1574bb3a72915da19b2ccc17acc47c95a15f6b690e8d8a0a633dbeb09d8"
+    },
+    "C28": {
+      "source": "art/masters/cards/card_C28_v002.png",
+      "sha256": "f6c2398f8ddf0caa247769c6a81e6e4fa2587773623b955cf763f70744f1c8ad"
+    },
+    "U01": {
+      "source": "art/masters/cards/card_U01_v006.png",
+      "sha256": "a44efdb4e8fcb1f2e5229c3ebba87bc7ea655c8883517ca9360e653f0acb9f4d"
+    },
+    "U02": {
+      "source": "art/masters/cards/card_U02_v001.png",
+      "sha256": "44d09cc449d7b9200f8818c24b74853131950d05d4543e2780c5a97e413b8a6e"
+    },
+    "U03": {
+      "source": "art/masters/cards/card_U03_v001.png",
+      "sha256": "d2c47ec23447d83f9894387c132b0a457ed291f713737bd921e60a66dd252559"
+    },
+    "U04": {
+      "source": "art/masters/cards/card_U04_v001.png",
+      "sha256": "4040350ec1179ccba8db383610062a31e408f1e0963e1d02dd1e182cbdf2dba8"
+    },
+    "U05": {
+      "source": "art/masters/cards/card_U05_v001.png",
+      "sha256": "26481cf98efa6e6951cf9cb0c236199cd06ec79d4e77116e7319191e163a8a8f"
+    },
+    "U06": {
+      "source": "art/masters/cards/card_U06_v006.png",
+      "sha256": "7b71e43b13f9a1aa31549b88772163d2c4bd7d6fa8db1ed36e380187233717db"
+    },
+    "U07": {
+      "source": "art/masters/cards/card_U07_v002.png",
+      "sha256": "74fba65aa5d5563de67dfb843412d67420089fcbc71b961a881f8fcbe77270ef"
+    },
+    "U08": {
+      "source": "art/masters/cards/card_U08_v001.png",
+      "sha256": "5701b6de93fd1df25ccfc17380ddb4e03b9f7606faace961622e821cae63326d"
+    },
+    "U09": {
+      "source": "art/masters/cards/card_U09_v008.png",
+      "sha256": "de1ba0b9bec0de5f08a94e95dce82037fd59007be3deeea6d5c0a0a3437378ca"
+    },
+    "U10": {
+      "source": "art/masters/cards/card_U10_v001.png",
+      "sha256": "1ad0c3888cd98123ad6d9c6e6ae87521a1b02e0caed348bdc5b9196d50dd8374"
+    },
+    "U11": {
+      "source": "art/masters/cards/card_U11_v003.png",
+      "sha256": "5982e09501fd51a5ceb9b03c1a46529cf03d012d27d2a2e740e460cada798eb3"
+    },
+    "U12": {
+      "source": "art/masters/cards/card_U12_v002.png",
+      "sha256": "d1df441d3f2776847270fa4845cf16963f12a8330e245c88207e42fe6c5c62de"
+    },
+    "U13": {
+      "source": "art/masters/cards/card_U13_v004.png",
+      "sha256": "ff1a7a901ec3cb7d26743b60898bc351e73f62cc0edf598a25a13231378adf7a"
+    },
+    "U14": {
+      "source": "art/masters/cards/card_U14_v001.png",
+      "sha256": "add5952067d6f1ab2c6b2f487f42afc0bc4174c0e71ed44db952c81ad296e4c0"
+    },
+    "U15": {
+      "source": "art/masters/cards/card_U15_v001.png",
+      "sha256": "0613d5b3b014a8ee07c1636b6cdb361114a45b31d53c9215ffe14a86b186b59e"
+    },
+    "U16": {
+      "source": "art/masters/cards/card_U16_v005.png",
+      "sha256": "d2405d33a7a59d312cb14ffba841f9342d1de5268a81f655136346c7d240e07a"
+    },
+    "U17": {
+      "source": "art/masters/cards/card_U17_v002.png",
+      "sha256": "3bb19db06882f0ecf7394366db0059529208cca47489bacebfaf38753cd806b0"
+    },
+    "U18": {
+      "source": "art/masters/cards/card_U18_v002.png",
+      "sha256": "4936606fee1a2a404b37b83958e506ab84b68a4bd2d3c389a1406768880370b6"
+    },
+    "U19": {
+      "source": "art/masters/cards/card_U19_v002.png",
+      "sha256": "85ba0b1b4a40a6cec1273538c282de4de898c747676a13ce10d81be1de8d3738"
+    },
+    "U20": {
+      "source": "art/masters/cards/card_U20_v004.png",
+      "sha256": "e27ad8fdb7b8a746cd60b5c59847c9159a6aa276d27d64d258f5335ca694bd09"
+    },
+    "U21": {
+      "source": "art/masters/cards/card_U21_v003.png",
+      "sha256": "709420331b4a21b05cb470e57c9342d66a38f978474c32f5d633a8fc3f5438c0"
+    },
+    "U22": {
+      "source": "art/masters/cards/card_U22_v001.png",
+      "sha256": "e894516b88f464edda9e52dade0f126c05168dab073411573f4aa2ea24482102"
+    },
+    "U23": {
+      "source": "art/masters/cards/card_U23_v002.png",
+      "sha256": "69efcaeb878a793c4f7792b9981a3612704110f304479986f94d04fc1d0ea5c2"
+    },
+    "U24": {
+      "source": "art/masters/cards/card_U24_v006.png",
+      "sha256": "82ccbf0f1701781dafaef51b01ebd51395618c54269b3423998ae696f2a7e31e"
+    },
+    "U25": {
+      "source": "art/masters/cards/card_U25_v003.png",
+      "sha256": "40d1545c3b56e53d02f734a5a36a2613b84ad1c7c96a6819d99c1204fbe94b32"
+    },
+    "U26": {
+      "source": "art/masters/cards/card_U26_v001.png",
+      "sha256": "be8b92a664c775ff0d05260abd52d1ce81cf0a95d3193155a605f0596e7fab48"
+    },
+    "U27": {
+      "source": "art/masters/cards/card_U27_v006.png",
+      "sha256": "95032cb73ca31b6705bfa210ebe07a739d6459e555ac0db82e1c240d02fd1aee"
+    },
+    "U28": {
+      "source": "art/masters/cards/card_U28_v003.png",
+      "sha256": "a674e343925d3b16f7bff7da53ee2662c0535c08793242e3afefcc7bc7070dc1"
+    },
+    "R01": {
+      "source": "art/masters/cards/card_R01_v002.png",
+      "sha256": "c8b81ecfe976ecd62c2d8b856a2ddc6319b8b611ec355a171378f3bce5794cfc"
+    },
+    "R02": {
+      "source": "art/masters/cards/card_R02_v001.png",
+      "sha256": "898a7fc24053676e572fee316e4c29ac995e2c64c4707fd60c633de403dd6f2a"
+    },
+    "R03": {
+      "source": "art/masters/cards/card_R03_v001.png",
+      "sha256": "ef4a3db08d86ebd0f77f0ada03467f9706a85da7945b4af8e6a752422001c589"
+    },
+    "R04": {
+      "source": "art/masters/cards/card_R04_v001.png",
+      "sha256": "69702c685189be30770d42d427d546d1bb68b7c1a313146d7f704bd637ab131b"
+    },
+    "R05": {
+      "source": "art/masters/cards/card_R05_v005.png",
+      "sha256": "41d5b37d6abffdd238d4e836c34a83cace6c97bc66a87bd59e43fa980b8c37fe"
+    },
+    "R06": {
+      "source": "art/masters/cards/card_R06_v007.png",
+      "sha256": "2bb6df71d0e36fa484e3eef186f36a704e9c190a3ebbcfa7ef7cdd545b3e32cd"
+    },
+    "R07": {
+      "source": "art/masters/cards/card_R07_v001.png",
+      "sha256": "a4aec4b3e4112c471c1ee826ca8031533c6e911c7c590713e214b08fe3eddec1"
+    },
+    "R08": {
+      "source": "art/masters/cards/card_R08_v001.png",
+      "sha256": "334aecc1e8c37831b0209e907c87e3240ad9602f78bc62cfe0147e1f3f0c95da"
+    },
+    "R09": {
+      "source": "art/masters/cards/card_R09_v001.png",
+      "sha256": "cdde59db1877ce411acbce1706b08683b9d2396a4ff0e26b6c8a70f0500272d7"
+    },
+    "R10": {
+      "source": "art/masters/cards/card_R10_v001.png",
+      "sha256": "69918483b73672a02aedf6ab9b7d1a7c7b67a220ac5e4771a856ce31c99e7636"
+    },
+    "R11": {
+      "source": "art/masters/cards/card_R11_v001.png",
+      "sha256": "c7a29c43db8a436d5d58cd51fb013f254d0a7b3628eabdbc8eebccee93b70f77"
+    },
+    "R12": {
+      "source": "art/masters/cards/card_R12_v003.png",
+      "sha256": "20c72a437f09cef975f71bba1ce2b14999fbe207f426a9850ee19c94ee64bd12"
+    },
+    "R13": {
+      "source": "art/masters/cards/card_R13_v002.png",
+      "sha256": "188ea2545eb7ef9125f4be6bdba0868549a42741e0aa67a85e860c97262da6a2"
+    },
+    "R14": {
+      "source": "art/masters/cards/card_R14_v002.png",
+      "sha256": "1a95ba44125d960e426d05477e13b353f65ec1004b55b4c0e56df4795c67afc3"
+    },
+    "R15": {
+      "source": "art/masters/cards/card_R15_v002.png",
+      "sha256": "5018bb62ece3dc90966836df31b00b9ba495b7c7c3f3629e896c41319782f9b6"
+    },
+    "R16": {
+      "source": "art/masters/cards/card_R16_v004.png",
+      "sha256": "ba2c173b38b95bc0851158ff90eeb3b96b3d85f59543260fbbefb215ad852370"
+    },
+    "T01": {
+      "source": "art/masters/cards/card_T01_v001.png",
+      "sha256": "b4688fa00e49eb8ee105fdad842e56c76aa176ef9657880a9bcc98228fa7ce98"
+    },
+    "T02": {
+      "source": "art/masters/cards/card_T02_v001.png",
+      "sha256": "ff39bc19f50fa90017e7972eb6573679442c50f21b561d1ff7c04e37bb2cdba6"
+    },
+    "T03": {
+      "source": "art/masters/cards/card_T03_v002.png",
+      "sha256": "a686f183e3afa8d4bd9b5d75fdf95d972fc7ba46f27371a698231c2044f6bf90"
+    }
+  },
+  "characters": {
+    "initial": {
+      "source": "art/masters/characters/master_initial_v005.png",
+      "sha256": "978601f650bbae682d55476141a55fd0704541c18c99cad17251ebc7c04971b6"
+    },
+    "mage": {
+      "source": "art/masters/characters/master_mage_v001.png",
+      "sha256": "490dfa6c9f49c1d44ea949f6399bc39666358216f5840d242bf204337289bab3"
+    },
+    "dragon": {
+      "source": "art/masters/characters/master_dragon_v003.png",
+      "sha256": "5c3d759a9a03c85a537c55484084fdd56a86890a7212d4cd134ced701d670d8c"
+    }
+  },
+  "relics": {
+    "moon_eye_scythe": {
+      "source": "art/masters/characters/镰刀q版.png",
+      "sha256": "9326e810f6b05e38d84df6c4a870a2b2e76af2f53224f6becaff00421bbfaadb"
+    }
+  }
+}
